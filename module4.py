@@ -50,6 +50,25 @@ for line in f:
 
 close(f)
 
+# Module 4 - Lecture 3
+# Retrieving data from dictionaries
+# We can retrieve the key and corresponding value from our dictionary using the items() method:
+
+for name, seq in seqs.items():
+	print(name, seq) #this will print out key,value pair
+
+
+# Interfacing with external programs - you can call/execute an external program from within your script
+import subprocess
+
+subprocess.call(['ls', '-l'])
+
+subprocess.call(["tophat", "genome_mouse_idx", "PE_reads_1.fq.gz", "SOMETHING"]) #call tophat program. tophat needs to be in path
+#Python will call the tophat program with the 3 paramaters passed
+
+
+
+
 
 
 
